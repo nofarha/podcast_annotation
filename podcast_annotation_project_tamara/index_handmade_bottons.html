@@ -1,0 +1,89 @@
+<html>
+<head>
+    <title>HandMade Audio Player</title>
+    <link rel="stylesheet" href="css/style.css" media="screen">
+</head>
+<body>
+<div id="container">
+	<div id="audio-image">
+		<img class="cover" />
+	</div>
+	<div id="audio-player">
+		<div id="audio-info">
+			<span class="artist"></span> - <span class="title"></span>
+		</div>
+		 <input id="volume" type="range" min="0" max="10" value="5" />
+		 <br>
+		 <div id="buttons">
+		 <span>
+			<button id="play"></button>
+      <button id="pause"></button>
+			<button id="prev"></button>
+			</span>
+		 </div>
+		 <div class="clearfix"></div>
+		 <div id="tracker">
+			<div id="progressBar">
+				<span id="progress"></span>
+			</div>
+			<span id="duration"></span>
+		 </div>
+		<div class="clearfix"></div>
+		 <ul id="playlist" class="hidden">
+			<li song="demo1.mp3" cover="cover1.jpg" artist="sample">demo1.mp3</li>
+	</div>
+
+</div>
+
+<div id="wow">
+  <div class="Question" id="q1">
+  <p>How emotionally intense (any emotion) did listening to this story make you feel?</p>
+  <a href="#" class="resp"  onclick="get_resp('#q1','1','1')">Not at all</a>
+  <a href="#" class="resp"  onclick="get_resp('#q1','2','1')">Not so much</a>
+  <a href="#" class="resp"  onclick="get_resp('#q1','3','1')">Neutral</a>
+  <a href="#" class="resp"  onclick="get_resp('#q1','4','1')">Somewhat</a>
+  <a href="#" class="resp"  onclick="get_resp('#q1','5','1')">Very much</a>
+</div>
+
+<div class="Question" id="q2">
+<p>How pleasant did this story make you feel?</p>
+<a href="#" class="resp"  onclick="get_resp('#q2','1','1')">Not at all</a>
+<a href="#" class="resp"  onclick="get_resp('#q2','2','1')">Not so much</a>
+<a href="#" class="resp"  onclick="get_resp('#q2','3','1')">Neutral</a>
+<a href="#" class="resp"  onclick="get_resp('#q2','4','1')">Somewhat</a>
+<a href="#" class="resp"  onclick="get_resp('#q2','5','1')">Very much</a>
+
+</div>
+<div class="Question" id="q3">
+<p>How unpleasant did this story make you feel?</p>
+<a href="#" class="resp"  onclick="get_resp('#q3','1','1')">Not at all</a>
+<a href="#" class="resp"  onclick="get_resp('#q3','2','1')">Not so much</a>
+<a href="#" class="resp"  onclick="get_resp('#q3','3','1')">Neutral</a>
+<a href="#" class="resp"  onclick="get_resp('#q3','4','1')">Somewhat</a>
+<a href="#" class="resp"  onclick="get_resp('#q3','5','1')">Very much</a>
+</div>
+
+<div class="Question" id="q4">
+<p>How interesting / easy to follow did you find this story?</p>
+<a href="#" class="resp"  onclick="get_resp('#q4','1','1')">Not at all</a>
+<a href="#" class="resp"  onclick="get_resp('#q4','2','1')">Not so much</a>
+<a href="#" class="resp"  onclick="get_resp('#q4','3','1')">Neutral</a>
+<a href="#" class="resp"  onclick="get_resp('#q4','4','1')">Somewhat</a>
+<a href="#" class="resp"  onclick="get_resp('#q4','5','1')">Very much</a>
+</div>
+
+<div class="Question" id="q5">
+<p>How much of this story did you find to be 'non-emotional'?</p>
+<a href="#" class="resp"  onclick="get_resp('#q5','1','1')">Not at all</a>
+<a href="#" class="resp"  onclick="get_resp('#q5','2','1')">Not so much</a>
+<a href="#" class="resp"  onclick="get_resp('#q5','3','1')">Neutral</a>
+<a href="#" class="resp"  onclick="get_resp('#q5','4','1')">Somewhat</a>
+<a href="#" class="resp"  onclick="get_resp('#q5','5','1')">Very much</a>
+</div>
+
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
